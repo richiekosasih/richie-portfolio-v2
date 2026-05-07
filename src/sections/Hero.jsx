@@ -1,6 +1,26 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import WordsPullUp from "../components/ui/WordsPullUp";
+
+function useMelbourneTime() {
+  const fmt = () =>
+    new Intl.DateTimeFormat("en-AU", {
+      timeZone: "Australia/Melbourne",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    }).format(new Date());
+
+  const [time, setTime] = useState(fmt);
+
+  useEffect(() => {
+    const id = setInterval(() => setTime(fmt()), 15_000);
+    return () => clearInterval(id);
+  }, []);
+
+  return time;
+}
 
 const CREAM = "#E1E0CC";
 const CREAM_70 = "rgba(225, 224, 204, 0.8)";
@@ -16,6 +36,8 @@ const navItems = [
 const heroTech = ["React", "JavaScript", "Tailwind CSS", "Vite", "GitHub"];
 
 export default function Hero() {
+  const melbTime = useMelbourneTime();
+
   return (
     <section id="hero" className="w-full min-h-svh sm:p-2 md:p-3">
       <div className="relative w-full min-h-svh sm:min-h-[calc(100svh-1rem)] md:min-h-[calc(100svh-1.5rem)] overflow-hidden rounded-none sm:rounded-2xl md:rounded-3xl">
@@ -55,17 +77,17 @@ export default function Hero() {
           </div>
         </nav>
 
-        {/* Mobile top bar — location pill */}
-        <div className="md:hidden absolute inset-x-0 top-0 z-20 flex items-center justify-center px-4 pt-4">
+        {/* Location + live time pill — top-right on all sizes */}
+        <div className="absolute right-0 top-0 z-20 px-4 pt-4 md:px-6 md:pt-5">
           <span
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/50 px-3 py-1.5 text-xs font-medium backdrop-blur"
-            style={{ color: CREAM_70 }}
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/5 bg-black/30 px-2.5 py-1 text-[10px] font-normal tracking-wide uppercase backdrop-blur-sm"
+            style={{ color: "rgba(225, 224, 204, 0.45)" }}
           >
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-400 opacity-60" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-violet-400" />
+            <span className="relative flex h-1 w-1">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-400/40" />
+              <span className="relative inline-flex h-1 w-1 rounded-full bg-violet-400/70" />
             </span>
-            Melbourne, Australia
+            Melbourne &middot; {melbTime}
           </span>
         </div>
 
