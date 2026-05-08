@@ -5,14 +5,14 @@ import { skills } from "../data/skills";
 
 export default function Skills() {
   return (
-    <Section id="skills">
+    <Section id="stack">
       <div className="mb-10">
         <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
-          Skills
+          Stack
         </h2>
         <p className="mt-3 text-cream/50">
-          The tools and technologies I work with — and what I'm currently
-          learning.
+          Tools and technologies I use to build clean, practical web
+          interfaces.
         </p>
       </div>
 

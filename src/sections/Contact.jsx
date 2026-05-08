@@ -6,11 +6,12 @@ export default function Contact() {
     <Section id="contact">
       <div className="mx-auto max-w-2xl rounded-2xl border border-neutral-800 bg-neutral-900/40 p-10 text-center">
         <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
-          Let's get in touch
+          Contact
         </h2>
         <p className="mt-4 text-cream/70">
-          I'm open to junior frontend roles, internships, and collaboration
-          opportunities. Feel free to reach out — I'd love to chat.
+          Interested in practical frontend work, internships, junior web
+          development opportunities, or business-focused web tools?
+          Let's connect.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -24,6 +25,14 @@ export default function Contact() {
             rel="noopener noreferrer"
           >
             GitHub
+          </Button>
+          <Button
+            href="https://linkedin.com"
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
           </Button>
         </div>
 

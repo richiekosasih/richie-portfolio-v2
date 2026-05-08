@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { name: "About", url: "#about" },
-  { name: "Skills", url: "#skills" },
-  { name: "Projects", url: "#projects" },
-  { name: "Experience", url: "#experience" },
+  { name: "Work", url: "#work" },
+  { name: "Systems", url: "#systems" },
+  { name: "Stack", url: "#stack" },
+  { name: "Background", url: "#background" },
   { name: "Contact", url: "#contact" },
 ];
 

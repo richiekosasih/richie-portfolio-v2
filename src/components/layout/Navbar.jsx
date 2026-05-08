@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import CurvedMenu from "../ui/CurvedMenu";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
+  { label: "Work", href: "#work" },
+  { label: "Systems", href: "#systems" },
+  { label: "Stack", href: "#stack" },
+  { label: "Background", href: "#background" },
   { label: "Contact", href: "#contact" },
 ];
 

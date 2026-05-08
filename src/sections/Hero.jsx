@@ -25,7 +25,7 @@ function useMelbourneTime() {
 const CREAM = "#E1E0CC";
 const CREAM_70 = "rgba(225, 224, 204, 0.8)";
 
-const heroTech = ["React", "JavaScript", "Tailwind CSS", "Vite", "GitHub"];
+const heroTech = ["React", "JavaScript", "Tailwind CSS", "Vite", "GitHub", "AI-assisted workflow"];
 
 export default function Hero() {
   const melbTime = useMelbourneTime();
@@ -86,16 +86,29 @@ export default function Hero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
                   duration: 0.8,
+                  delay: 0.4,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="text-xs font-medium uppercase tracking-widest sm:text-sm"
+                style={{ color: "rgba(225, 224, 204, 0.5)" }}
+              >
+                Frontend &amp; Business Systems Builder
+              </motion.p>
+
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.8,
                   delay: 0.5,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="max-w-md text-sm leading-snug sm:text-base md:text-base"
+                className="max-w-md text-sm leading-snug sm:text-base"
                 style={{ color: CREAM_70, lineHeight: 1.35 }}
               >
-                Frontend Developer building modern interfaces for real
-                business problems. I create responsive web applications with
-                React, JavaScript, and Tailwind CSS, with a focus on clarity,
-                usability, and practical workflows.
+                I combine frontend development, business process thinking,
+                and AI-assisted tools to turn messy ideas into clean, usable
+                web applications.
               </motion.p>
 
               {/* Tech badges */}
@@ -132,11 +145,11 @@ export default function Hero() {
                 className="flex flex-wrap items-center gap-2.5"
               >
                 <a
-                  href="#projects"
+                  href="#work"
                   className="group inline-flex items-center gap-2 rounded-full py-1 pl-5 pr-1 text-sm font-medium transition-all hover:gap-3 sm:text-base"
                   style={{ background: CREAM, color: "#000" }}
                 >
-                  View Projects
+                  View Work
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black transition-transform group-hover:scale-110 sm:h-9 sm:w-9">
                     <ArrowRight
                       className="h-3.5 w-3.5 sm:h-4 sm:w-4"

@@ -1,18 +1,24 @@
-/**
- * Skills grouped by category.
- * Easy to extend later (just add a new group or new items).
- */
 export const skills = [
   {
     category: "Frontend",
-    items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    items: ["React", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Vite"],
   },
   {
-    category: "Tools",
-    items: ["GitHub", "Cursor", "VS Code", "Vite"],
+    category: "Workflow",
+    items: [
+      "GitHub",
+      "Cursor",
+      "Component-based development",
+      "Responsive design",
+    ],
   },
   {
-    category: "Learning",
-    items: ["Backend fundamentals", "Cybersecurity", "UI/UX"],
+    category: "Expanding",
+    items: [
+      "API integration",
+      "Backend fundamentals",
+      "Cybersecurity foundations",
+      "Business analysis thinking",
+    ],
   },
 ];
