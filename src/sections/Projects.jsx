@@ -33,7 +33,7 @@ function ProjectCard({ project }) {
       <Card className={`flex h-full flex-col ${cardExtra}`}>
         <div className="flex items-start justify-between gap-3">
           <div>
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="text-xl font-semibold text-cream">
               {project.title}
             </h3>
             {project.featured && (
@@ -45,7 +45,7 @@ function ProjectCard({ project }) {
           <StatusPill status={project.status} />
         </div>
 
-        <p className="mt-4 flex-1 text-sm leading-relaxed text-neutral-300">
+        <p className="mt-4 flex-1 text-sm leading-relaxed text-cream/70">
           {project.description}
         </p>
 
@@ -82,10 +82,10 @@ export default function Projects() {
   return (
     <Section id="projects">
       <div className="mb-10">
-        <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
           Projects
         </h2>
-        <p className="mt-3 text-neutral-400">
+        <p className="mt-3 text-cream/50">
           A selection of projects I'm building as I grow as a frontend
           developer.
         </p>

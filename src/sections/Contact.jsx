@@ -5,10 +5,10 @@ export default function Contact() {
   return (
     <Section id="contact">
       <div className="mx-auto max-w-2xl rounded-2xl border border-neutral-800 bg-neutral-900/40 p-10 text-center">
-        <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
           Let's get in touch
         </h2>
-        <p className="mt-4 text-neutral-300">
+        <p className="mt-4 text-cream/70">
           I'm open to junior frontend roles, internships, and collaboration
           opportunities. Feel free to reach out — I'd love to chat.
         </p>
@@ -27,7 +27,7 @@ export default function Contact() {
           </Button>
         </div>
 
-        <p className="mt-6 text-sm text-neutral-500">
+        <p className="mt-6 text-sm text-cream/40">
           richiekosasih@gmail.com
         </p>
       </div>

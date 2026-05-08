@@ -17,7 +17,7 @@ export default function Button({
     primary:
       "bg-violet-500 text-white hover:bg-violet-600 focus-visible:ring-violet-400",
     secondary:
-      "border border-neutral-700 bg-transparent text-neutral-100 hover:bg-neutral-800 hover:border-neutral-600 focus-visible:ring-neutral-500",
+      "border border-neutral-700 bg-transparent text-cream hover:bg-neutral-800 hover:border-neutral-600 focus-visible:ring-neutral-500",
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;

@@ -1,3 +1,4 @@
+import { ReactLenis } from "lenis/react";
 import Navbar from "./components/layout/Navbar";
 import TubeLightNav from "./components/ui/TubeLightNav";
 import Footer from "./components/layout/Footer";
@@ -10,18 +11,22 @@ import Contact from "./sections/Contact";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-200">
-      <Navbar />
-      <TubeLightNav />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ReactLenis root>
+      <div className="min-h-screen bg-neutral-950 text-cream/70">
+        <Navbar />
+        <TubeLightNav />
+        <main>
+          <Hero />
+          <div className="relative z-10 rounded-t-3xl bg-neutral-950 shadow-[0_-20px_60px_rgba(0,0,0,0.5)]">
+            <About />
+            <Skills />
+            <Projects />
+            <Experience />
+            <Contact />
+          </div>
+        </main>
+        <Footer />
+      </div>
+    </ReactLenis>
   );
 }

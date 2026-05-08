@@ -31,7 +31,7 @@ export default function Hero() {
   const melbTime = useMelbourneTime();
 
   return (
-    <section id="hero" className="w-full min-h-svh sm:p-2 md:p-3">
+    <section id="hero" className="sticky top-0 w-full min-h-svh sm:p-2 md:p-3">
       <div className="relative w-full min-h-svh sm:min-h-[calc(100svh-1rem)] md:min-h-[calc(100svh-1.5rem)] overflow-hidden rounded-none sm:rounded-2xl md:rounded-3xl">
         {/* Background video — placeholder, replace src with your own asset later */}
         <video

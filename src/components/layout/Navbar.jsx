@@ -47,7 +47,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between px-6 py-4 sm:px-8">
           <a
             href="#hero"
-            className="text-base font-semibold text-white tracking-tight"
+            className="text-base font-semibold text-cream tracking-tight"
           >
             Richie Kosasih
           </a>
@@ -61,7 +61,7 @@ export default function Navbar() {
               "relative z-50 inline-flex h-10 w-10 items-center justify-center rounded-md transition-colors duration-300",
               open
                 ? "border border-black/10 text-black hover:bg-black/5"
-                : "border border-neutral-800 text-neutral-300 hover:bg-neutral-900",
+                : "border border-neutral-800 text-cream/60 hover:bg-neutral-900",
             ].join(" ")}
           >
             <span className="sr-only">Toggle menu</span>

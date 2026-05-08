@@ -7,10 +7,10 @@ export default function Skills() {
   return (
     <Section id="skills">
       <div className="mb-10">
-        <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
           Skills
         </h2>
-        <p className="mt-3 text-neutral-400">
+        <p className="mt-3 text-cream/50">
           The tools and technologies I work with — and what I'm currently
           learning.
         </p>
@@ -19,7 +19,7 @@ export default function Skills() {
       <div className="grid gap-6 md:grid-cols-3">
         {skills.map((group) => (
           <Card key={group.category}>
-            <h3 className="text-lg font-semibold text-white">
+            <h3 className="text-lg font-semibold text-cream">
               {group.category}
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">

@@ -66,11 +66,11 @@ export default function ProfileCard({
           className="bg-neutral-900 border border-neutral-800 rounded-3xl shadow-2xl p-8 ml-[-80px] z-10 max-w-xl flex-1"
         >
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-white mb-2">{name}</h2>
-            <p className="text-sm font-medium text-neutral-400">{title}</p>
+            <h2 className="text-2xl font-bold text-cream mb-2">{name}</h2>
+            <p className="text-sm font-medium text-cream/50">{title}</p>
           </div>
 
-          <p className="text-neutral-300 text-base leading-relaxed mb-8">
+          <p className="text-cream/70 text-base leading-relaxed mb-8">
             {description}
           </p>
 
@@ -81,7 +81,7 @@ export default function ProfileCard({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 bg-white/10 rounded-full flex items-center justify-center text-neutral-300 transition-all hover:bg-white/20 hover:text-white hover:scale-105"
+                className="w-11 h-11 bg-white/10 rounded-full flex items-center justify-center text-cream/60 transition-all hover:bg-white/20 hover:text-cream hover:scale-105"
                 aria-label={label}
               >
                 {icon}
@@ -107,9 +107,9 @@ export default function ProfileCard({
         </motion.div>
 
         <motion.div {...fadeUp(0.15)} className="px-2">
-          <h2 className="text-xl font-bold text-white mb-2">{name}</h2>
-          <p className="text-sm font-medium text-neutral-400 mb-4">{title}</p>
-          <p className="text-neutral-300 text-sm leading-relaxed mb-6">
+          <h2 className="text-xl font-bold text-cream mb-2">{name}</h2>
+          <p className="text-sm font-medium text-cream/50 mb-4">{title}</p>
+          <p className="text-cream/70 text-sm leading-relaxed mb-6">
             {description}
           </p>
           <div className="flex justify-center gap-3">
@@ -119,7 +119,7 @@ export default function ProfileCard({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 bg-white/10 rounded-full flex items-center justify-center text-neutral-300 transition-all hover:bg-white/20 hover:text-white"
+                className="w-11 h-11 bg-white/10 rounded-full flex items-center justify-center text-cream/60 transition-all hover:bg-white/20 hover:text-cream"
                 aria-label={label}
               >
                 {icon}
