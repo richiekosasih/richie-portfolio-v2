@@ -18,7 +18,7 @@ const points = [
 
 export default function Background() {
   return (
-    <Section id="background">
+    <Section id="background" className="bg-[#0d0b08]">
       <div className="grid gap-10 lg:grid-cols-12 lg:gap-12 items-start">
         {/* Photo */}
         <motion.div

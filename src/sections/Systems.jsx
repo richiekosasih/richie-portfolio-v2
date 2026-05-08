@@ -26,7 +26,7 @@ const systems = [
 
 export default function Systems() {
   return (
-    <Section id="systems">
+    <Section id="systems" className="bg-[#08090c]">
       <div className="mb-10">
         <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
           Systems

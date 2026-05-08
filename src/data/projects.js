@@ -7,6 +7,7 @@ export const projects = [
     tech: ["React", "JavaScript", "Tailwind CSS", "LocalStorage"],
     status: "In Progress",
     github: "https://github.com/richiekosasih/yummom-dashboard.git",
+    image: null,
     featured: true,
   },
   {
@@ -17,6 +18,7 @@ export const projects = [
     tech: ["React", "JavaScript", "Vite", "Tailwind CSS"],
     status: "In Progress",
     github: null,
+    image: null,
     featured: false,
   },
 ];

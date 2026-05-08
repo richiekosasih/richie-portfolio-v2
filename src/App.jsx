@@ -5,7 +5,7 @@ import Footer from "./components/layout/Footer";
 import Hero from "./sections/Hero";
 import Work from "./sections/Projects";
 import Systems from "./sections/Systems";
-import Stack from "./sections/Skills";
+import Stack from "./sections/Stack";
 import Background from "./sections/About";
 import Contact from "./sections/Contact";
 
@@ -17,7 +17,7 @@ export default function App() {
         <TubeLightNav />
         <main>
           <Hero />
-          <div className="relative z-10 rounded-t-3xl bg-neutral-950 shadow-[0_-20px_60px_rgba(0,0,0,0.5)]">
+          <div className="relative z-10 overflow-hidden rounded-t-3xl bg-[#0c0a07] shadow-[0_-20px_60px_rgba(0,0,0,0.5)]">
             <Work />
             <Systems />
             <Stack />

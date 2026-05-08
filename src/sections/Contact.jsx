@@ -3,7 +3,7 @@ import Button from "../components/ui/Button";
 
 export default function Contact() {
   return (
-    <Section id="contact">
+    <Section id="contact" className="bg-[#08090c]">
       <div className="mx-auto max-w-2xl rounded-2xl border border-neutral-800 bg-neutral-900/40 p-10 text-center">
         <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
           Contact
