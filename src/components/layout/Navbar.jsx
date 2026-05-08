@@ -33,19 +33,18 @@ export default function Navbar() {
     <>
       <header
         className={[
-          "sticky top-0 z-50 w-full border-b transition-all duration-300",
+          "sticky top-0 z-50 w-full border-b transition-all duration-300 md:hidden",
           open
             ? "border-transparent bg-transparent"
             : scrolled
               ? "border-neutral-800/80 bg-neutral-950/80 backdrop-blur"
               : "border-transparent bg-transparent",
-          scrolled ? "md:translate-y-0" : "md:-translate-y-full",
           scrollingDown && !open
-            ? "max-md:-translate-y-2 max-md:opacity-0 max-md:pointer-events-none"
-            : "max-md:translate-y-0 max-md:opacity-100",
+            ? "opacity-30"
+            : "opacity-100",
         ].join(" ")}
       >
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
+        <nav className="flex items-center justify-between px-6 py-4 sm:px-8">
           <a
             href="#hero"
             className="text-base font-semibold text-white tracking-tight"
@@ -53,28 +52,13 @@ export default function Navbar() {
             Richie Kosasih
           </a>
 
-          {/* Desktop nav */}
-          <ul className="hidden items-center gap-8 md:flex">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="text-sm text-neutral-400 transition-colors hover:text-white"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          {/* Mobile toggle */}
           <button
             type="button"
             aria-label="Toggle navigation"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
             className={[
-              "relative z-50 inline-flex h-10 w-10 items-center justify-center rounded-md md:hidden transition-colors duration-300",
+              "relative z-50 inline-flex h-10 w-10 items-center justify-center rounded-md transition-colors duration-300",
               open
                 ? "border border-black/10 text-black hover:bg-black/5"
                 : "border border-neutral-800 text-neutral-300 hover:bg-neutral-900",

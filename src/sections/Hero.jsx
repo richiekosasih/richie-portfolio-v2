@@ -25,14 +25,6 @@ function useMelbourneTime() {
 const CREAM = "#E1E0CC";
 const CREAM_70 = "rgba(225, 224, 204, 0.8)";
 
-const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
-];
-
 const heroTech = ["React", "JavaScript", "Tailwind CSS", "Vite", "GitHub"];
 
 export default function Hero() {
@@ -56,26 +48,6 @@ export default function Hero() {
 
         {/* Gradient overlay for readability */}
         <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/30 via-transparent to-black/60" />
-
-        {/* Prisma-style pill nav — desktop only */}
-        <nav className="hidden md:block absolute left-1/2 top-0 z-20 -translate-x-1/2 max-w-[90vw]">
-          <div className="flex items-center gap-6 rounded-b-2xl bg-black px-6 py-2.5 lg:gap-12 lg:rounded-b-3xl lg:px-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="whitespace-nowrap text-xs transition-colors duration-200 lg:text-sm"
-                style={{ color: CREAM_70 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = CREAM)}
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.color = CREAM_70)
-                }
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
-        </nav>
 
         {/* Location + live time pill — top-right on all sizes */}
         <div className="absolute right-0 top-0 z-20 px-4 pt-4 md:px-6 md:pt-5">

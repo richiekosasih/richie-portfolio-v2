@@ -1,4 +1,5 @@
 import Navbar from "./components/layout/Navbar";
+import TubeLightNav from "./components/ui/TubeLightNav";
 import Footer from "./components/layout/Footer";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-200">
       <Navbar />
+      <TubeLightNav />
       <main>
         <Hero />
         <About />
